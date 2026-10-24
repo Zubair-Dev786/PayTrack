@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - PayTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+
+  <!-- ===== Admin login form ===== -->
+  <div class="login-box">
+    <div class="icon">🔐</div>
+    <h1>Admin Login</h1>
+    <p>Enter your admin code to continue</p>
+
+    <div class="form-group">
+      <label for="adminCodeInput">Admin Code</label>
+      <input type="password" id="adminCodeInput" placeholder="Enter code">
+    </div>
+
+    <button class="btn" id="loginBtn">Login</button>
+    <a href="index.html" class="back-link">← Back to home</a>
+  </div>
+
+  <!-- ===== JavaScript ===== -->
+  <script src="js/lib/sweetalert2.all.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/admin-login.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary - PayTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Sidebar ===== -->
+  <div class="sidebar">
+    <h2>💼 PayTrack</h2>
+    <a href="dashboard.html">📊 Dashboard</a>
+    <a href="employees.html">👥 Employees</a>
+    <a href="salary.html" class="active">💰 Salary</a>
+    <a href="#" id="logoutBtn">🚪 Logout</a>
+  </div>
+
+  <!-- ===== Main content ===== -->
+  <div class="main">
+    <h1 class="page-title">Salary</h1>
+    <p class="page-subtitle">Pay salaries and see who is already paid</p>
+
+    <!-- ===== List 1: not paid yet ===== -->
+    <div class="box">
+      <h3>⏳ Pending Salaries</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Department</th>
+              <th>Salary</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="pendingTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ===== List 2: paid ===== -->
+    <div class="box">
+      <h3>✅ Paid Salaries</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Department</th>
+              <th>Salary</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="paidTable"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== JavaScript ===== -->
+  <script src="js/lib/sweetalert2.all.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/salary.js"></script>
+</body>
+</html>

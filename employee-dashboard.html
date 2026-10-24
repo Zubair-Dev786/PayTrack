@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard - PayTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Sidebar ===== -->
+  <div class="sidebar">
+    <h2>💼 PayTrack</h2>
+    <a href="employee-dashboard.html" class="active">🏠 My Dashboard</a>
+    <a href="#" id="logoutBtn">🚪 Logout</a>
+  </div>
+
+  <!-- ===== Main content ===== -->
+  <div class="main">
+    <div class="welcome-banner">
+      <h1 id="welcomeText">Welcome</h1>
+      <p>Here are your salary details</p>
+    </div>
+
+    <div class="cards-row">
+      <div class="card">
+        <div class="card-icon">🏢</div>
+        <div><h3 id="myDepartment">-</h3><p>Department</p></div>
+      </div>
+      <div class="card">
+        <div class="card-icon">💵</div>
+        <div><h3 id="mySalary">-</h3><p>Monthly Salary</p></div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📌</div>
+        <div><h3><span id="myStatus">-</span></h3><p>Salary Status</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== JavaScript ===== -->
+  <script src="js/lib/sweetalert2.all.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/employee-dashboard.js"></script>
+</body>
+</html>
