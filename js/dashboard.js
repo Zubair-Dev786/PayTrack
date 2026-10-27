@@ -24,7 +24,7 @@ function showOverview() {
       paid++;
     } else {
       pending++;
-      amount += Number(employees[i].salary) || 0;
+      amount += Number(employees[i].salary);
     }
   }
 
